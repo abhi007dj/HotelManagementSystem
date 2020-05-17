@@ -7,7 +7,7 @@ namespace HMS.Entities
     public class AccomodationType
     {
 
-        public int Id { get; set; }
+        public int Id { get; set; } 
         public string Name { get; set; }  // Hotel room , Appartments
         public string Description { get; set; }
     }

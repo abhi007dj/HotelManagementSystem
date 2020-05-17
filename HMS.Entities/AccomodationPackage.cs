@@ -6,7 +6,7 @@ namespace HMS.Entities
 {
     public class AccomodationPackage
     {
-        public int Id { get; set; }
+        public int Id { get; set; } 
         public int AccomodationTypeId { get; set; }
         public  AccomodationType AccomodationType { get; set; }
 
