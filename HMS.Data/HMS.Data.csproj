@@ -52,6 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HMSContext.cs" />
+    <Compile Include="Migrations\202005181258114_initial.cs" />
+    <Compile Include="Migrations\202005181258114_initial.designer.cs">
+      <DependentUpon>202005181258114_initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +68,11 @@
       <Project>{AB2A161A-DA82-4D31-8B6A-F3D51D5DF2FF}</Project>
       <Name>HMS.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202005181258114_initial.resx">
+      <DependentUpon>202005181258114_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
